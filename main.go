@@ -13,6 +13,7 @@ import (
 func main() {
 	//examplesData()
 	//demoWebServer()
+	//examplesProgramFlow()
 
 	controllers.RegisterControllers()
 	http.ListenAndServe(":3000", nil)
@@ -32,6 +33,10 @@ func startWebServer(port int, numberOfRetries int) (int, error) {
 	fmt.Println("Number of retries:", numberOfRetries)
 
 	return port, errors.New("something went wrong")
+}
+
+func examplesProgramFlow() {
+	examples.ProgramFlow()
 }
 
 func examplesData() {
