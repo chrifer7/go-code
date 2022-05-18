@@ -18,6 +18,7 @@ func newUserController() *userController {
 	//constructing the object (struct) using only memory address
 	return &userController{
 		//the path should be localhost:3000/users/:id
+		//FIX: Go: Getting Started > 6 Creating Functions and Methods > Demo: Starting the Webservice
 		userIDPattern: regexp.MustCompile("^/users/(\\d+)/?"),
 	}
 }
